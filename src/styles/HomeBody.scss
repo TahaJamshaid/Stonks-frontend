@@ -1,0 +1,144 @@
+.homebody {
+  margin-top: 9.47em;
+}
+
+.uppersection {
+  margin: 0em 10.125em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CoinHeading {
+  margin-left: 4em;
+}
+
+.upper-left-section,
+.upper-right-section {
+  //   border: 1px solid black;
+}
+
+.upper-right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  background: #ffffff;
+  /* Shadow */
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+  h1{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.38em;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+  }
+  p{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.1em;
+    /* identical to box height */
+    
+    text-align: center;
+    margin-top: 20px;
+    
+    color: #000000;
+    
+  }
+}
+
+.CoinPrice {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 61px;
+  /* identical to box height */
+  padding-left: 5px;
+
+  color: #000000;
+  margin-top: 0.3em;
+}
+
+.CoinTitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.19em;
+  line-height: 61px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.prediction-chart {
+  background-color: white;
+  width: 100%;
+  height: 14.5em;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.week,
+.month {
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.56em;
+    line-height: 30px;
+    text-align: center;
+
+    color: #000000;
+    width: 8em;
+  }
+  p {
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4em;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 2em;
+    color: #000000;
+  }
+}
+
+.green {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 30px;
+  text-align: center;
+
+  color: #4cbb17;
+}
+.yellow {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ffb21e;
+}
+.red {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4em;
+  line-height: 30px;
+  text-align: center;
+
+  color: #ff5100;
+}

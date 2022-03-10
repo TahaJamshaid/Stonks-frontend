@@ -1,0 +1,49 @@
+body {
+  background-color: #FBFBFE;
+}
+
+.Navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 9.7vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 0.25px solid #b3b3b3;
+}
+
+.Navbar .CompTitle {
+  font-family: 'Eczar';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 39px;
+  letter-spacing: 0.12em;
+  color: #303030;
+  width: 20%;
+}
+
+.Navbar .NavItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.Navbar .NavItems li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.25em;
+  line-height: 24px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=Navbar.css.map */
