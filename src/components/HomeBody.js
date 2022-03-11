@@ -36,6 +36,25 @@ const HomeBody = () => {
             <p>$ 871,305,000</p>
         </div>
       </div>
+      <div className="Graph">
+        <h1>GRAPH</h1>
+      </div>
+      <div className="Twitter">
+        <h1>What Twitter Says</h1>
+        <div className="twitter-pane">
+          <div className="tweets container" style={{padding:"0"}}>
+            <div className="row">
+              <div className="col"></div>
+              <div className="col"></div>
+            </div>
+            <div className="row">
+              <div className="col"></div>
+              <div className="col"></div>
+            </div>
+          </div>
+          <p className="readmore">Read More..</p>
+        </div>
+      </div>
     </div>
   );
 };

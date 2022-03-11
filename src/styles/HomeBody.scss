@@ -18,15 +18,15 @@
 }
 
 .upper-right-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #ffffff;
   /* Shadow */
 
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
-  h1{
+  h1 {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -36,18 +36,17 @@
 
     color: #000000;
   }
-  p{
+  p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 2.1em;
     /* identical to box height */
-    
+
     text-align: center;
     margin-top: 20px;
-    
+
     color: #000000;
-    
   }
 }
 
@@ -141,4 +140,78 @@
   text-align: center;
 
   color: #ff5100;
+}
+
+.Graph {
+  background: #ffffff;
+  /* Shadow */
+
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+  width: 98.9em;
+  height: 40.625em;
+  margin: 6em auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    font-size: 2em;
+  }
+}
+
+.Twitter {
+  margin-top: 12.8em;
+  h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.125em;
+    line-height: 61px;
+    /* identical to box height */
+
+    color: #000000;
+    text-align: center;
+  }
+  .twitter-pane {
+    width: 100vw;
+    height: 50em;
+    background-color: #ffffff;
+    border-top: 0.25px solid #b3b3b3;
+    border-bottom: 0.25px solid #b3b3b3;
+    margin-top: 2.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .tweets {
+      width: 70%;
+      // border: 0.25px solid black;
+      height: 75%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .col {
+        border: 0.25px solid black;
+        height: 100%;
+        width: 49%;
+      }
+      .row {
+        height: 47%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .readmore {
+      text-align: center;
+      margin-top: 3em;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 24px;
+
+      color: #000000;
+    }
+  }
 }

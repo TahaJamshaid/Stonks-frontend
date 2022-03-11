@@ -21,8 +21,21 @@ const Login = () => {
           className="w-full h-full object-cover"
         />
         <div className="absolute flex flex-col justify-start items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay">
-          <div style={{display:"flex",flexDirection:"column",alignItems:"center",margin:"auto",fontFamily:'Eczar'}}>
-            <h1 className="text-white m-32 text-6xl mb-0" style={{marginTop:"0",fontSize:"7rem",fontWeight:"600"}}>Stonks</h1>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              margin: "auto",
+              fontFamily: "Eczar",
+            }}
+          >
+            <h1
+              className="text-white m-32 text-6xl mb-0"
+              style={{ marginTop: "0", fontSize: "7rem", fontWeight: "600" }}
+            >
+              Stonks
+            </h1>
             <p className="text-white m-5 text-2xl">
               A Cryptotrading market predictor solution
             </p>
@@ -46,7 +59,7 @@ const Login = () => {
             src={ImageTwo}
             alt="Space Ship"
             className="absolute right-64 bottom-64"
-            style={{bottom:"25rem"}}
+            style={{ bottom: "25rem" }}
           />
         </div>
       </div>
