@@ -1,5 +1,6 @@
 import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
+import Tweets from "./Tweets";
 
 const HomeBody = () => {
   const color = ["green", "yellow", "red"];
@@ -44,12 +45,12 @@ const HomeBody = () => {
         <div className="twitter-pane">
           <div className="tweets container" style={{padding:"0"}}>
             <div className="row">
-              <div className="col"></div>
-              <div className="col"></div>
+              <div className="col"><Tweets/></div>
+              <div className="col"><Tweets/></div>
             </div>
             <div className="row">
-              <div className="col"></div>
-              <div className="col"></div>
+              <div className="col"><Tweets/></div>
+              <div className="col"><Tweets/></div>
             </div>
           </div>
           <p className="readmore">Read More..</p>

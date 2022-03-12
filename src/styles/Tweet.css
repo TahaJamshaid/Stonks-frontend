@@ -1,0 +1,72 @@
+.tweet {
+  font-family: Montserrat;
+  padding: 0px 30px;
+}
+
+.tweet .top-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweet .top-section .username {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tweet .top-section .username h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.tweet .top-section .username p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  color: #797979;
+}
+
+.tweet .top-section .username img {
+  width: 32px;
+  height: 25px;
+}
+
+.tweet .profilepicture {
+  width: 46px;
+  height: 46px;
+  background-color: grey;
+  border-radius: 50px;
+}
+
+.tweet .tweet-text {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.875em;
+  line-height: 37px;
+  color: #000000;
+  margin-top: 20px;
+}
+
+.tweet .tweet-text span {
+  color: #15B9FF;
+}
+/*# sourceMappingURL=Tweet.css.map */

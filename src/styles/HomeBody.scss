@@ -191,12 +191,16 @@
       flex-direction: column;
       justify-content: space-between;
       .col {
-        border: 0.25px solid black;
-        height: 100%;
+        border: 0.25px solid rgba(112, 112, 112,0.5);
+        border-radius: 20px;
+        height: 95%;
         width: 49%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .row {
-        height: 47%;
+        height: 49%;
         width: 100%;
         display: flex;
         justify-content: space-between;

@@ -1,0 +1,54 @@
+.tweet {
+  font-family: Montserrat;
+  padding: 0px 30px;
+  .top-section {
+    display: flex;
+    align-items: center;
+    .username {
+      display: flex;
+      height: fit-content;
+      margin-left: 10px;
+      align-items: center;
+      h5 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        height: fit-content;
+        margin: auto;
+        color: #797979;
+      }
+      img{
+          width: 32px;
+          height: 25px;
+      }
+    }
+  }
+  .profilepicture {
+    width: 46px;
+    height: 46px;
+    background-color: grey;
+    border-radius: 50px;
+  }
+
+  .tweet-text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.875em;
+    line-height: 37px;
+    
+    color: #000000;
+    margin-top: 20px;
+
+    span{
+        color: #15B9FF;
+    }
+  }
+}
