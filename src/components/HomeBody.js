@@ -1,7 +1,8 @@
 import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
-import TradeViewChart from 'react-crypto-chart';
+import TradingViewWidget, { Themes } from 'react-tradingview-widget';
+
 
 
 const HomeBody = () => {
@@ -50,7 +51,12 @@ const HomeBody = () => {
       </div>
       <div className="Graph">
         {/* <h1>GRAPH</h1> */}
-        <TradeViewChart pair="BTCBUSD" containerStyle={settings}/>
+        <TradingViewWidget
+    symbol="ADABUSD"
+    theme={Themes.BRIGHT}
+    locale="fr"
+    autosize
+  />
       </div>
       <div className="Twitter">
         <h1>What Twitter Says</h1>

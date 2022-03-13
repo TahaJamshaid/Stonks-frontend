@@ -32,7 +32,7 @@ const Login = () => {
           >
             <h1
               className="text-white m-32 text-6xl mb-0"
-              style={{ marginTop: "0", fontSize: "7rem", fontWeight: "600" }}
+              style={{ marginTop: "0", fontSize: "5rem", fontWeight: "600" }}
             >
               Stonks
             </h1>
@@ -53,13 +53,13 @@ const Login = () => {
           <img
             src={ImageOne}
             alt="rocket going up"
-            className="h-80 w-80 absolute right-20 bottom-5"
+            className="h-60 w-60 absolute right-20 bottom-5"
           />
           <img
             src={ImageTwo}
             alt="Space Ship"
-            className="absolute right-64 bottom-64"
-            style={{ bottom: "25rem" }}
+            className="absolute right-60 bottom-59"
+            style={{ bottom: "20rem",right:"10rem" }}
           />
         </div>
       </div>
