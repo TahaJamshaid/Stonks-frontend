@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
+import {CoinContextProvider} from "./store/coin-context";
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <CoinContextProvider>
+      <App />
+    </CoinContextProvider>
   </BrowserRouter>,
   document.getElementById("root")
 );

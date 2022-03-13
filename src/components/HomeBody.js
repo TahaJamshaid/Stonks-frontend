@@ -2,18 +2,18 @@ import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
 import TradingViewWidget, { Themes } from 'react-tradingview-widget';
+import { useContext } from "react";
+import { CoinContext } from "../store/coin-context";
+import { useEffect } from "react";
 
 
 
 const HomeBody = () => {
 
-  const settings =  {
-    width: '90%',
-    height: '90%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  };
+  const coin = useContext(CoinContext);
+  // console.log(coin.currentcoin);
+  // coin.changeCoin("ADA");
+  useEffect(()=>  console.log(coin.currentcoin),[coin.currentcoin]);
 
   const color = ["green", "yellow", "red"];
   return (
@@ -52,9 +52,9 @@ const HomeBody = () => {
       <div className="Graph">
         {/* <h1>GRAPH</h1> */}
         <TradingViewWidget
-    symbol="ADABUSD"
+    symbol={`${coin.currentcoin}BUSD`}
     theme={Themes.BRIGHT}
-    locale="fr"
+    locale="en"
     autosize
   />
       </div>
