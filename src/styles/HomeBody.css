@@ -1,5 +1,6 @@
 .homebody {
   margin-top: 9.47em;
+  width: 100vw;
 }
 
 .uppersection {
@@ -157,7 +158,7 @@
   /* Shadow */
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
-  width: 98.9em;
+  width: 95vw;
   height: 40.625em;
   margin: 6em auto;
   display: -webkit-box;
@@ -191,7 +192,7 @@
 }
 
 .Twitter .twitter-pane {
-  width: 100vw;
+  width: 100%;
   height: 50em;
   background-color: #ffffff;
   border-top: 0.25px solid #b3b3b3;
@@ -256,11 +257,11 @@
 
 .Twitter .twitter-pane .readmore {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 2em;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.475rem;
   line-height: 24px;
   color: #000000;
 }

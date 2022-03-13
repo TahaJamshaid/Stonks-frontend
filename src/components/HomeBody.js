@@ -43,7 +43,7 @@ const HomeBody = () => {
       <div className="Twitter">
         <h1>What Twitter Says</h1>
         <div className="twitter-pane">
-          <div className="tweets container" style={{padding:"0"}}>
+          <div className="tweets" style={{padding:"0"}}>
             <div className="row">
               <div className="col"><Tweets/></div>
               <div className="col"><Tweets/></div>

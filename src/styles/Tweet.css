@@ -1,3 +1,12 @@
+.twitter-pane {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .tweet {
   font-family: Montserrat;
   padding: 0px 30px;
@@ -28,16 +37,15 @@
 .tweet .top-section .username h5 {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25vw;
   color: #000000;
+  word-wrap: none;
 }
 
 .tweet .top-section .username p {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 0.7rem;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -46,13 +54,12 @@
 }
 
 .tweet .top-section .username img {
-  width: 32px;
-  height: 25px;
+  width: 1.5rem;
 }
 
 .tweet .profilepicture {
-  width: 46px;
-  height: 46px;
+  width: 2.275rem;
+  height: 2.275rem;
   background-color: grey;
   border-radius: 50px;
 }
