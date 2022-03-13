@@ -1,8 +1,19 @@
 import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
+import TradeViewChart from 'react-crypto-chart';
+
 
 const HomeBody = () => {
+
+  const settings =  {
+    width: '90%',
+    height: '90%',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
+
   const color = ["green", "yellow", "red"];
   return (
     <div className="homebody">
@@ -38,7 +49,8 @@ const HomeBody = () => {
         </div>
       </div>
       <div className="Graph">
-        <h1>GRAPH</h1>
+        {/* <h1>GRAPH</h1> */}
+        <TradeViewChart pair="BTCBUSD" containerStyle={settings}/>
       </div>
       <div className="Twitter">
         <h1>What Twitter Says</h1>
