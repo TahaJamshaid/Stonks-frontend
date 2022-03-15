@@ -1,42 +1,19 @@
 import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
-import TradingViewWidget, { Themes } from "react-tradingview-widget";
-// import { Meter } from "@adobe/react-spectrum";
-import { Progress } from "react-sweet-progress";
-import "react-sweet-progress/lib/style.css";
+import TradingViewWidget, { Themes } from 'react-tradingview-widget';
+import { useContext } from "react";
+import { CoinContext } from "../store/coin-context";
+import { useEffect } from "react";
+
+
 
 const HomeBody = () => {
-  const settings = {
-    width: "90%",
-    height: "90%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
 
-  const themeForBar = {
-    error: {
-      symbol: "Sell",
-      trailColor: "pink",
-      color: "red",
-    },
-    default: {
-      symbol: "Hold",
-      trailColor: "lightblue",
-      color: "blue",
-    },
-    active: {
-      symbol: "76%",
-      trailColor: "yellow",
-      color: "orange",
-    },
-    success: {
-      symbol: "Strongly Buy",
-      trailColor: "lime",
-      color: "green",
-    },
-  };
+  const coin = useContext(CoinContext);
+  // console.log(coin.currentcoin);
+  // coin.changeCoin("ADA");
+  useEffect(()=>  console.log(coin.currentcoin),[coin.currentcoin]);
 
   const color = ["green", "yellow", "red"];
   return (
@@ -68,55 +45,33 @@ const HomeBody = () => {
           </div>
         </div>
         <div className="upper-right-section" style={{ width: "45%" }}>
-          <h1>Market Cap</h1>
-          <p>$ 871,305,000</p>
+            <h1>Market Cap</h1>
+            <p>$ 871,305,000</p>
         </div>
       </div>
       <div className="Graph">
         {/* <h1>GRAPH</h1> */}
         <TradingViewWidget
-          symbol="ADABUSD"
-          theme={Themes.BRIGHT}
-          locale="fr"
-          autosize
-        />
+    symbol={`${coin.currentcoin}BUSD`}
+    theme={Themes.BRIGHT}
+    locale="en"
+    autosize
+  />
       </div>
       <div className="Twitter">
         <h1>What Twitter Says</h1>
         <div className="twitter-pane">
-          <div className="tweets" style={{ padding: "0" }}>
+          <div className="tweets" style={{padding:"0"}}>
             <div className="row">
-              <div className="col">
-                <Tweets />
-              </div>
-              <div className="col">
-                <Tweets />
-              </div>
+              <div className="col"><Tweets/></div>
+              <div className="col"><Tweets/></div>
             </div>
             <div className="row">
-              <div className="col">
-                <Tweets />
-              </div>
-              <div className="col">
-                <Tweets />
-              </div>
+              <div className="col"><Tweets/></div>
+              <div className="col"><Tweets/></div>
             </div>
           </div>
           <p className="readmore">Read More..</p>
-        </div>
-        {/* for polarity bar */}
-        <div className="h-48 m-12 ">
-          <p className="text-2xl m-4">Polarity</p>
-          <div className="flex justify-center row">
-            <Progress
-              className="p-12"
-              percent={76}
-              theme={themeForBar}
-              type="circle"
-              width={100}
-            />
-            <Progress className="p-12" theme={themeForBar} percent={76} />
-          </div>
         </div>
       </div>
     </div>
