@@ -2,7 +2,6 @@ import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
 import TradingViewWidget, { Themes } from "react-tradingview-widget";
-// import { Meter } from "@adobe/react-spectrum";
 import { Progress } from "react-sweet-progress";
 import "react-sweet-progress/lib/style.css";
 
@@ -107,7 +106,7 @@ const HomeBody = () => {
         {/* for polarity bar */}
         <div className="h-48 m-12 ">
           <p className="text-2xl m-4">Polarity</p>
-          <div className="flex justify-center row">
+          <div className="flex justify-center items-center">
             <Progress
               className="p-12"
               percent={76}
