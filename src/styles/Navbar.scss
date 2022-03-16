@@ -4,7 +4,7 @@ body{
 .Navbar {
   display: flex;
   align-items: center;
-  width: 98vw;
+  width: 98.9vw;
   height: 9.7vh;
   // padding-left: 3em;
   justify-content: center;
@@ -14,7 +14,7 @@ body{
     font-family: 'Eczar';
     font-style: normal;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 39px;
     letter-spacing: 0.12em;
 
@@ -26,14 +26,25 @@ body{
       width: 70%;
       list-style-type: none;
       justify-content: space-around;
-
+      height: 100%;
+      align-items: center;
       li{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: normal;
-        font-size: 1.25em;
+        font-size: 1.25rem;
         line-height: 24px;
         font-weight: 400;
+        width: 8%;
+        // text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.1s ease-in;
+      }
+      .active{
+        border-bottom: 5px solid #303030;
       }
   }
 }

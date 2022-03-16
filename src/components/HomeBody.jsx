@@ -2,40 +2,40 @@ import BTC from "../assets/BTC.png";
 import "../styles/HomeBody.css";
 import Tweets from "./Tweets";
 import TradingViewWidget, { Themes } from "react-tradingview-widget";
+import { useContext } from "react";
+import { CoinContext } from "../store/coin-context";
+import { useEffect } from "react";
 import { Progress } from "react-sweet-progress";
 import "react-sweet-progress/lib/style.css";
 
-const HomeBody = () => {
-  const settings = {
-    width: "90%",
-    height: "90%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  };
+const themeForBar = {
+  error: {
+    symbol: "Sell",
+    trailColor: "pink",
+    color: "red",
+  },
+  default: {
+    symbol: "Hold",
+    trailColor: "lightblue",
+    color: "blue",
+  },
+  active: {
+    symbol: "76%",
+    trailColor: "yellow",
+    color: "orange",
+  },
+  success: {
+    symbol: "Strongly Buy",
+    trailColor: "lime",
+    color: "green",
+  },
+};
 
-  const themeForBar = {
-    error: {
-      symbol: "Sell",
-      trailColor: "pink",
-      color: "red",
-    },
-    default: {
-      symbol: "Hold",
-      trailColor: "lightblue",
-      color: "blue",
-    },
-    active: {
-      symbol: "76%",
-      trailColor: "yellow",
-      color: "orange",
-    },
-    success: {
-      symbol: "Strongly Buy",
-      trailColor: "lime",
-      color: "green",
-    },
-  };
+const HomeBody = () => {
+  const coin = useContext(CoinContext);
+  // console.log(coin.currentcoin);
+  // coin.changeCoin("ADA");
+  useEffect(() => console.log(coin.currentcoin), [coin.currentcoin]);
 
   const color = ["green", "yellow", "red"];
   return (
@@ -74,9 +74,9 @@ const HomeBody = () => {
       <div className="Graph">
         {/* <h1>GRAPH</h1> */}
         <TradingViewWidget
-          symbol="ADABUSD"
+          symbol={`${coin.currentcoin}BUSD`}
           theme={Themes.BRIGHT}
-          locale="fr"
+          locale="en"
           autosize
         />
       </div>
